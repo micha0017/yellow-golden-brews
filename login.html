@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="loginstyle.css">
+</head>
+
+<body onload="window.alert('Please login in first before accessing the site');">
+    <script>
+        var attempts = 0;
+
+        function focuseventUsername() {
+            document.getElementById("username").style.background = "#6a6a6a";
+        }
+
+        function focuseventPassword() {
+            document.getElementById("password").style.background = "#6a6a6a";
+        }
+
+        function login() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            if (username == "goldenhourcafe_admin" && password == "golden") {
+                window.location.href = "homepage.html";
+            } else {
+                attempts++;
+                if (attempts == 3) {
+                    alert("Maximum attempts reached. Please try again later.");
+                    document.getElementById("submit").disabled = true;
+                } else {
+                    alert("Incorrect username or password. Please try again.");
+                }
+            }
+        }
+
+        function cancel() {
+            document.getElementById("username").value = "";
+            document.getElementById("password").value = "";
+        }
+
+    </script>
+
+    <body>
+        <h1>LOGIN FORM</h1>
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required onfocus="focuseventUsername()"><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required onfocus="focuseventPassword()"><br>
+
+            <button type="button" id="submit" onclick="login()">Submit</button>
+            <button type="button" id="clear" onclick="cancel()">Cancel</button>
+        </form>
+    </body>
+</body>
+
+</html>

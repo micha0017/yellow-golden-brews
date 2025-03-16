@@ -1,0 +1,290 @@
+/* General Styles */
+* {
+    margin: 0;
+
+
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spectral', serif;
+}
+
+body {
+    background: url('bg/reviewbg.png') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+}
+
+.navmenu {
+    display: flex;
+    gap: 20px;
+}
+
+.navmenu a {
+    color: gold;
+    font-size: 20px;
+    text-transform: capitalize;
+    padding: 10px 15px;
+    font-weight: 400;
+    transition: all 0.3s ease;
+    
+}
+
+.navmenu a:hover {
+    color: black;
+}
+
+/* Main Section */
+.main-home {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start; /* Aligns content to the left */
+    align-items: center;
+    padding: 20px;
+}
+
+/* Left-Aligned Text */
+.main-text {
+    max-width: 600px;
+    text-align: left;
+    padding-left: 5%;
+}
+
+.main-text h5 {
+    color: #e1c340;
+    font-size: 3em;
+    font-weight: 800;
+}
+
+.main-text span {
+    color: #e1c340;
+    font-size: 1.5em;
+    font-weight: 1000;
+}
+
+.main-text p {
+    color: #f0d8b1;
+    font-size: 1em;
+}
+
+/* Header */
+header {
+    background-color: rgba(0, 0, 0, 0.381);
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    right: 0%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensures logo on the left, menu on the right */
+    background-color: #080808; /* Background color for the header */
+    padding: 15px 30px; /* Adds spacing */
+    position: fixed; /* Fixes the header at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures the header stays on top of other elements */
+}
+
+.logo img {
+    height: 100px; /* Adjust based on your logo size */
+}
+
+.navmenu { 
+    display: flex;
+    gap: 20px; /* Adds spacing between menu items */
+}
+
+.navmenu a {
+    color: gold;
+    font-size: 20px;
+    text-transform: capitalize;
+    padding: 10px 15px;
+    font-weight: 400;
+    transition: all 0.3s ease;
+
+}
+
+.navmenu a:hover {
+    color: black;
+}
+
+
+.navmenu li {
+    display: inline;
+}
+
+.navmenu li a {
+    text-decoration: none;
+    color: gold;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+
+/* Contact Section */
+.contact-section {
+    padding: 120px 20px 50px;
+}
+
+.contact-section h1 {
+    font-size: 36px;
+    color: gold;
+    margin-bottom: 10px;
+}
+
+.contact-section p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+/* Contact Boxes */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.contact-box {
+    width: 300px;
+    padding: 20px;
+    border: 2px solid white;
+    text-align: left;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+}
+
+.contact-box h2 {
+    color: gold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.contact-box p {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.contact-box a {
+    color: gold;
+    text-decoration: none;
+}
+
+.contact-box a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-box {
+        width: 90%;
+    }
+}
+
+/* Responsive Design - Using W3Schools Grid Techniques */
+@media (max-width: 1024px) {
+    .main-home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main-text {
+        max-width: 80%;
+        padding-left: 0;
+    }
+
+    
+}
+
+@media (max-width: 768px) {
+    /* Adjust header */
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 15px 20px;
+    }
+
+    .navmenu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .navmenu a {
+        font-size: 18px;
+        padding: 5px;
+    }
+
+    /* Stack main section */
+    .main-home {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .main-text {
+        max-width: 90%;
+        padding: 20px;
+    }
+
+    .main-text h5 {
+        font-size: 2em;
+    }
+
+    .main-text p {
+        font-size: 16px;
+    }
+
+    .main-btn {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+
+}
+
+@media (max-width: 480px) {
+    /* Further adjustments for small screens */
+    .main-text h5 {
+        font-size: 1.8em;
+    }
+
+    .main-text p {
+        font-size: 14px;
+    }
+
+    .main-btn {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+}

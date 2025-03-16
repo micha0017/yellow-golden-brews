@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="menustyle.css">
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <title>Menu</title>
+    <style>
+        .row {
+            border: 2px solid yellow;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            background-color: rgba(245, 245, 245, 0.6);
+            cursor: pointer;
+        }
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .row img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <header>
+        <a href="homepage.html" class="logo"><img src="\Users\Admin\Downloads\logo.png" alt="Yellow Brews Logo"></a>
+        <nav>
+            <ul class="navmenu">
+                <li><a href="homepage.html">HOME</a></li>
+                <li><a href="menupage.html">MENU</a></li>
+                <li><a href="aboutuspage.html">ABOUT US</a></li>
+                <li><a href="contacts.html">CONTACTS</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <div class="bg">
+        <section id="hot">
+            <div class="center-text">
+                <h2>HOT DRINKS</h2>
+            </div>
+            <div class="products">
+                <div class="row" onclick="addToCart('Espresso Shot', 170, 'menu/espresso.png')">
+                    <img src="menu/espresso.png" alt="Espresso Shot">
+                    <h4>Espresso Shot</h4>
+                    <p>170 PHP</p>
+                </div>
+                <div class="row" onclick="addToCart('Cappuccino', 120, 'menu/cappuccino.png')">
+                    <img src="menu/cappuccino.png" alt="Cappuccino">
+                    <h4>Cappuccino</h4>
+                    <p>120 PHP</p>
+                </div>
+                <div class="row" onclick="addToCart('Hot Chocolate', 130, 'menu/hotchoco.png')">
+                    <img src="menu/hotchoco.png" alt="Hot Chocolate">
+                    <h4>Hot Chocolate</h4>
+                    <p>130 PHP</p>
+                </div>
+                <div class="row" onclick="addToCart('Latte', 150, 'menu/latte.png')">
+                    <img src="menu/latte.png" alt="Latte">
+                    <h4>Latte</h4>
+                    <p>150 PHP</p>
+                </div>
+            </div>
+        </section>
+        <section id="cold">
+            <div class="center-text">
+                <h2>COLD DRINKS</h2>
+            </div>
+            <div class="products">
+                <div class="row" onclick="addToCart('Iced Latte', 140, 'menu/icedlatte.png')">
+                    <img src="menu/icedlatte.png" alt="Iced Latter">
+                    <h4>Iced Latte</h4>
+                    <p>140 PHP</p>
+                </div>
+                <div class="row" onclick="addToCart('Fruit in Fused Water', 160, 'menu/FruitInfusedWater.png')">
+                    <img src="menu/FruitInfusedWater.png" alt="Fruit in Fused Water">
+                    <h4>Fruit Infused water</h4>
+                    <p>160 PHP</p>
+                </div>
+                <div class="row" onclick="addToCart('Ice Tea Spritz', 150, 'menu/IcedTeaSpritz.png')">
+                    <img src="menu/IcedTeaSpritz.png" alt="Ice Tea Spritz">
+                    <h4>Iced Tea Spritz</h4>
+                    <p>150 PHP</p>
+                </div>
+                <div class="row" onclick="addToCart('Cucumber', 130, 'menu/cucumberlimecooler.png')">
+                    <img src="menu/cucumberlimecooler.png" alt="Cucumber">
+                    <h4>Cucumber</h4>
+                    <p>130 PHP</p>
+                </div>
+            </div>
+        </section>
+        <section id="pastries">
+            <div class="center-text">
+                <h2>PASTRIES</h2>
+            </div>
+            <div class="products">
+                <div class="row" onclick="addToCart('Blueberry Cheesecake', 200, 'menu/cheesecake.png')">
+                    <img src="menu/cheesecake.png" alt="Blueberry Cheesecake">
+                    <h4>Blueberry Cheesecake</h4>
+                    <p>200 PHP</p>
+                </div>
+                <div class="row" onclick="addToCart('Croissant', 160, 'enu/croissant.png')" >
+                    <img src="menu/croissant.png" alt="Croissant">
+                    <h4>Croissant</h4>
+                    <p>160 PHP</p>
+                </div>
+                <div class="row" onclick="addToCart('Macaroons', 120, 'menu/macaroons.png')">
+                    <img src="menu/macaroons.png" alt="Macaroons">
+                    <h4>Macaroons</h4>
+                    <p>120 PHP</p>
+                </div>
+                <div class="row" onclick="addToCart('Velvet Cupcakes', 130, 'menu/velvetcupcakes.png')">
+                    <img src="menu/velvetcupcakes.png" alt="Velvet Cupcakes">
+                    <h4>Velvet Cupcakes</h4>
+                    <p>130 PHP</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,385 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Spectral', serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+.logo img {
+    position: relative;
+    max-width: 500px;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.381);
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    right: 0%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+main {
+    padding-top: 100px;
+}
+
+body {
+    background-image: url(bg/pastrybg.png);
+    background-size: cover;
+    height: 105vh;
+    top: 100px;
+}
+
+.navmenu {
+    display: flex;
+    gap: 20px;
+}
+
+.navmenu a {
+    color: gold;
+    font-size: 20px;
+    text-transform: capitalize;
+    padding: 10px 15px;
+    font-weight: 400;
+    transition: all 0.3s ease;
+    
+}
+
+.navmenu a:hover {
+    color: black;
+}
+
+/* Main Section */
+.main-home {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start; /* Aligns content to the left */
+    align-items: center;
+    padding: 20px;
+}
+
+/* Left-Aligned Text */
+.main-text {
+    max-width: 600px;
+    text-align: left;
+    padding-left: 5%;
+}
+
+.main-text h5 {
+    color: #e1c340;
+    font-size: 3em;
+    font-weight: 800;
+}
+
+.main-text span {
+    color: #e1c340;
+    font-size: 1.5em;
+    font-weight: 1000;
+}
+
+.main-text p {
+    color: #f0d8b1;
+    font-size: 1em;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensures logo on the left, menu on the right */
+    background-color: #222; /* Background color for the header */
+    padding: 15px 30px; /* Adds spacing */
+    position: fixed; /* Fixes the header at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures the header stays on top of other elements */
+}
+
+.logo img {
+    height: 100px; /* Adjust based on your logo size */
+}
+
+.navmenu { 
+    display: flex;
+    gap: 20px; /* Adds spacing between menu items */
+}
+
+.navmenu a {
+    color: gold;
+    font-size: 20px;
+    text-transform: capitalize;
+    padding: 10px 15px;
+    font-weight: 400;
+    transition: all 0.3s ease;
+    text-decoration: none; /* Removes underline */
+}
+
+.navmenu a:hover {
+    color: black;
+}
+
+
+.navicon {
+    display: flex;
+    align-items: center;
+}
+
+.navicon i {
+    margin-right: 20px;
+    color: gold;
+    font-size: 25px;
+    font-weight: 400px;
+}
+
+.navicon i:hover {
+    transform: scale(1.1);
+    color: rgb(0, 0, 0);
+}
+
+.center-text h2 {
+    color: gold;
+    font-size: 50px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+    gap: 2rem;
+}
+
+.row {
+    position: relative;
+    transition: all .40s;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.381);
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    right: 0%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+section {
+    padding: 10% 10%;
+}
+
+.row img {
+    width: 100%;
+    height: auto;
+    transition: all .40s;
+}
+
+.row img:hover {
+    transform: scale(0.9);
+}
+
+.heart-icon {
+    position: absolute;
+    color: whitesmoke;
+    right: 0;
+    font-size: 20px;
+}
+
+.heart-icon:hover {
+    color: red;
+}
+
+.cart-icon {
+    position: absolute;
+    color: whitesmoke;
+    right: 25px;
+    font-size: 20px;
+}
+
+.cart-icon:hover {
+    color: gold;
+}
+
+.price h4 {
+    color: gold;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+.price p {
+    color: gold;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#hot {
+    background: url("pastrybg.png") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    position: relative;
+    bottom: 0;
+    top: auto;
+}
+
+#cold {
+    background: url("pastrybg.png") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    position: relative;
+    bottom: 0;
+    top: auto;
+}
+
+#pastries {
+    background: url("pastrybg.png") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    position: relative;
+    bottom: 25px;
+}
+
+
+button:hover {
+    opacity: 0.8;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #f0ebeb;
+    overflow-x: hidden;
+}
+
+#open_cart_button a {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    border: none;
+    background-color: var(--accent-color);
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* Responsive Design - Using W3Schools Grid Techniques */
+@media (max-width: 1024px) {
+    .main-home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main-text {
+        max-width: 80%;
+        padding-left: 0;
+    }
+
+    
+}
+
+@media (max-width: 768px) {
+    /* Adjust header */
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 15px 20px;
+    }
+
+    .navmenu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .navmenu a {
+        font-size: 18px;
+        padding: 5px;
+    }
+
+    /* Stack main section */
+    .main-home {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .main-text {
+        max-width: 90%;
+        padding: 20px;
+    }
+
+    .main-text h5 {
+        font-size: 2em;
+    }
+
+    .main-text p {
+        font-size: 16px;
+    }
+
+    .main-btn {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+
+}
+
+@media (max-width: 480px) {
+    /* Further adjustments for small screens */
+    .main-text h5 {
+        font-size: 1.8em;
+    }
+
+    .main-text p {
+        font-size: 14px;
+    }
+
+    .main-btn {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+}
